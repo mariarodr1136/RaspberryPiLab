@@ -49,23 +49,28 @@ All projects and tutorials in this repository are built using components from th
 RaspberryPiTutorials/
 │
 ├── GPIO_Basics/
-│   ├── blink_led.py
-│   ├── button_input.py
+│   ├── buttonLED.py              # Basic button-controlled LED
+│   ├── intPullUp.py              # Input with internal pull-up resistor
+│   ├── binCount.py               # Sequential LED blinking example
+│   ├── myDim.py                  # PWM LED dimmer using buttons
+│   ├── myRGBbutton.py            # RGB LED controlled by multiple buttons
 │   └── README.md
 │
 ├── Sensors/
-│   ├── temperature_sensor.py
-│   ├── light_sensor.py
+│   ├── echoLocation.py           # Ultrasonic distance sensor (HC-SR04)
+│   ├── tiltTest.py               # Tilt sensor reading
 │   └── README.md
 │
 ├── ADC_Examples/
-│   ├── ADC0834_example.py
-│   ├── potentiometer_read.py
+│   ├── anIn.py                   # Basic analog input using ADC0834
+│   ├── joyStick.py               # Joystick X/Y reading via ADC0834
+│   ├── potServo.py               # Potentiometer controlling a servo motor
+│   ├── RGBmix.py                 # RGB LED color mixing via analog inputs
 │   └── README.md
 │
 └── Projects/
-    ├── rgb_led_controller.py
-    ├── motion_alarm_system.py
+    ├── motion_alarm_system.py    # (future project placeholder)
+    ├── rgb_led_controller.py     # (future project placeholder)
     └── README.md
 ```
 
