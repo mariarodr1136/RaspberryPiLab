@@ -22,6 +22,7 @@ This repository serves as a **learning archive** and **reference hub** for anyon
 
 You'll find beginner-friendly examples in **Python**, plus explanations on how to connect and test each component.
 
+
 ---
 
 ## 🛠️ Hardware & Kit Information
@@ -164,6 +165,7 @@ python3 buttonLED.py
 
 
 ---
+
 
 ## 💡 Future Plans
 
