@@ -94,6 +94,14 @@ sudo apt install python3-gpiozero
 
 ---
 
+### 🔧 Understanding the Raspberry Pi GPIO Pinout
+<p align="center">
+  <img src="https://github.com/user-attachments/assets/911d0daa-3e0d-46dd-9a93-f1c28372f181" alt="Screenshot 2025-10-29 at 4 56 40 PM" width="885" height="503">
+</p>
+> This diagram helps identify the GPIO pins used for digital I/O, ADC modules, and external components in these projects.
+
+---
+
 ## 🚀 How to Run
 
 1. Clone this repository:
