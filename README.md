@@ -45,7 +45,7 @@ All experiments in this repository are built using components from this kit, ens
 
 ## 📂 Repository Structure
 ```
-RaspberryPiDevelopments/
+RaspberryPiLab/
 │
 ├── GPIO_Basics/
 │   ├── buttonLED.py              # Basic button-controlled LED
