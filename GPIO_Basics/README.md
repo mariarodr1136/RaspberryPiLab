@@ -7,7 +7,7 @@ This section covers foundational Raspberry Pi GPIO programming examples. These s
 - **ButtonLED.py** – Reads input from a physical button and controls an LED in response. When the button is pressed, the LED turns off; when released, the LED turns on. Includes a clean shutdown routine on keyboard interrupt.
 - **intPullUp.py** – Shows how to use internal pull-up resistors with GPIO inputs.
 - **myDim.py** – Implements PWM (Pulse Width Modulation) to dim an LED using button inputs.
-- **binCount.py** – Demonstrates binary counting using multiple LEDs.
+- **myRGBbutton.py** – Demonstrates how to control an RGB LED using three separate buttons. Each button toggles one color channel (red, green, or blue) on or off independently. The program continuously monitors button states, updates the LED colors in real time, and performs a safe GPIO cleanup when interrupted.
 
 ## Concepts Covered
 - GPIO pin modes (`BOARD` vs `BCM`)
