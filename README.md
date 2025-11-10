@@ -59,6 +59,7 @@ RaspberryPiLab/
 │   ├── echoLocation.py           # Ultrasonic distance sensor (HC-SR04)
 │   ├── tiltTest.py               # Tilt sensor reading
 │   ├── sos.py                    # Calculates the speed of sound (MPH) using ultrasonic sensor timing
+│   ├── pir-motion.py             # Detects motion using a PIR (Passive Infrared) sensor
 │   └── README.md
 │
 ├── ADC_Examples/
@@ -147,6 +148,7 @@ python3 buttonLED.py
 - LEDs (Red, Green, Blue)
 - 220Ω resistors
 - Push button
+- PIR motion sensor  
 - ADC0834 chip
 - Potentiometer
 - Servo motor (SG90)
