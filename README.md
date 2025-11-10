@@ -129,30 +129,71 @@ python3 buttonLED.py
 
 ---
 
-## 🧩 Topics Covered
-
-- GPIO setup and cleanup
-- Digital input/output
-- PWM and LED control
-- Button debouncing
-- Reading analog sensors with ADC0834
-- Servo motor control
-- Basic hardware debugging
-
----
-
 ## 🛠️ Hardware Used
 
-- Raspberry Pi 4 Model B (4GB)
-- Breadboard & jumper wires
-- LEDs (Red, Green, Blue)
-- 220Ω resistors
-- Push button
-- PIR motion sensor  
-- ADC0834 chip
-- Potentiometer
-- Servo motor (SG90)
-- Various sensors (temperature, light, etc.)
+### Core Components
+- ✅ Raspberry Pi 4 Model B (4GB)
+- ✅ Breadboard & jumper wires
+- ✅ Breadboard power module  
+- 40-Pin GPIO cable  
+- ✅ T-shape extension board  
+- 9V battery  
+
+### Input & Control Devices
+- ✅ Push button
+- Slide switch  
+- Micro switch  
+- Keypad  
+- Rotary encoder  
+- ✅ Joystick module  
+- ✅ Tilt switch sensor  
+- Touch sensor  
+- Obstacle avoidance sensor  
+- Reed switch (speed sensor)  
+- ✅ PIR motion sensor  
+- DHT-11 temperature & humidity sensor  
+
+### Output Devices
+- ✅ LEDs (Red, Green, Blue)
+- ✅ RGB LED  
+- LED bar graph  
+- 7-segment display (single)  
+- 4-digit 7-segment display  
+- Dot matrix display  
+- 12C LCD 1602 display  
+- Speaker  
+- Audio amplifier module  
+- Fan  
+- Relay module  
+
+### Communication & Identification
+- MFRC522 RFID reader module  
+- Camera module  
+
+### Sensors
+- ✅ Ultrasonic sensor (HC-SR04)  
+- Thermistor  
+- Photoresistor (LDR)  
+- MPU6050 accelerometer & gyroscope  
+
+### Motors & Drivers
+- ✅ Servo motor (SG90)
+- ✅ Potentiometer
+- Motor (DC)  
+- L293D motor driver IC  
+
+### Integrated Circuits & Components
+- ✅ ADC0834 chip
+- 2x 74HC595 shift registers  
+- Transistors (5x 8550 PNP / 5x S8050 NPN)  
+- Diodes (IN4007, Zener)  
+- Capacitors: 5x 10 μF, (10+10)x 104/103 pF  
+- ✅ Resistors (assorted, includes 220 Ω)  
+
+### Miscellaneous
+- Passive & active buzzers (2+2x)  
+- ✅ Various sensors (temperature, light, etc.)  
+- Caps (10x 6×6 mm tactile caps)  
 
 ---
   
@@ -180,7 +221,6 @@ python3 buttonLED.py
 - Include camera and image processing projects
 - Explore IoT integration with AWS and MQTT
 
-  
 
 ---
 
