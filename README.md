@@ -10,8 +10,6 @@ Each module is designed to demonstrate how software and hardware interact to pow
 
 By progressively combining these components, this project aims to develop a robust understanding of **electronics**, **signal processing**, and **real-time data acquisition**, forming the foundation for advanced Raspberry Pi and embedded engineering projects.
 
-The ultimate goal of this repository is to serve as a comprehensive, hands-on resource for building **integrated multi-sensor and actuator systems**, enabling complex prototypes and automation solutions while documenting the learning journey with each component and experiment.
-
 ---
 
 ![Python](https://img.shields.io/badge/Language-Python-3776AB?logo=python&logoColor=white) ![Raspberry Pi](https://img.shields.io/badge/Hardware-Raspberry%20Pi-C51A4A?logo=raspberrypi&logoColor=white) ![GPIO](https://img.shields.io/badge/Module-RPi.GPIO-EE0000) ![Sensors](https://img.shields.io/badge/Category-Sensors-00A86B) ![ADC0834](https://img.shields.io/badge/Chip-ADC0834-FFA500) ![Electronics](https://img.shields.io/badge/Skills-Electronics-yellow) ![Breadboard](https://img.shields.io/badge/Component-Breadboard-lightgrey) ![Python3](https://img.shields.io/badge/Version-Python%203.7+-blue) ![VS Code](https://img.shields.io/badge/Editor-VS%20Code-0078D7?logo=visualstudiocode) ![Git](https://img.shields.io/badge/Version%20Control-Git-F05032?logo=git&logoColor=white) ![GitHub](https://img.shields.io/badge/Repo-GitHub-181717?logo=github) ![Linux](https://img.shields.io/badge/OS-Linux-lightgrey?logo=linux) ![GPIOZero](https://img.shields.io/badge/Library-GPIOZero-009688) ![Matplotlib](https://img.shields.io/badge/Visualization-Matplotlib-11557C) ![SensorsKit](https://img.shields.io/badge/Kit-Sensor%20Modules-orange)
@@ -21,6 +19,9 @@ The ultimate goal of this repository is to serve as a comprehensive, hands-on re
 <p align="center">
   <img src="https://github.com/user-attachments/assets/2db21b23-a1fe-4959-a9e9-745a955dbc6d" alt="IMG_4893" width="600" height="600">
 </p>
+
+
+The ultimate goal of this repository is to serve as a comprehensive, hands-on resource for building **integrated multi-sensor and actuator systems**, enabling complex prototypes and automation solutions while documenting the learning journey with each component and experiment.
 
 ---
 
@@ -36,6 +37,8 @@ The ultimate goal of this repository is to serve as a comprehensive, hands-on re
   - Ideal for prototyping embedded systems and electronics projects
 
 All experiments in this repository are built using components from this kit, ensuring reproducibility for users with the same hardware.
+
+---
 
 <p align="center">
   <img src="https://github.com/user-attachments/assets/5d860645-a026-41f3-bd59-f1d61252a14b" alt="IMG_4152" width="600" height="600">
