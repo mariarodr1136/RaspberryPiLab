@@ -20,7 +20,6 @@ By progressively combining these components, this project aims to develop a robu
   <img src="https://github.com/user-attachments/assets/2db21b23-a1fe-4959-a9e9-745a955dbc6d" alt="IMG_4893" width="600" height="600">
 </p>
 
-
 The ultimate goal of this repository is to serve as a comprehensive, hands-on resource for building **integrated multi-sensor and actuator systems**, enabling complex prototypes and automation solutions while documenting the learning journey with each component and experiment.
 
 ---
@@ -63,7 +62,11 @@ RaspberryPiLab/
 │   ├── tiltTest.py               # Tilt sensor reading
 │   ├── sos.py                    # Calculates the speed of sound (MPH) using ultrasonic sensor timing
 │   ├── pir-motion.py             # Detects motion using a PIR (Passive Infrared) sensor
-│   └── README.md
+│   ├── lcdDisplay.py             # Displays text on an LCD1602 via I2C
+│   ├── LCD1602.py                # Low-level library for controlling LCD1602
+│   ├── tempLCD.py                # Reads DHT11 sensor and displays temperature/humidity on LCD
+│   ├── tempHumidity.py           # Reads DHT11 sensor and prints temperature/humidity to terminal
+│   └── README.md                 # Documentation for all sensor scripts
 │
 ├── ADC_Examples/
 │   ├── anIn.py                   # Basic analog input using ADC0834
@@ -154,7 +157,7 @@ python3 buttonLED.py
 - Obstacle avoidance sensor  
 - Reed switch (speed sensor)  
 - ✅ PIR motion sensor  
-- DHT-11 temperature & humidity sensor  
+- ✅ DHT-11 temperature & humidity sensor  
 
 ### Output Devices
 - ✅ LEDs (Red, Green, Blue)
@@ -163,7 +166,7 @@ python3 buttonLED.py
 - 7-segment display (single)  
 - 4-digit 7-segment display  
 - Dot matrix display  
-- 12C LCD 1602 display  
+- ✅ 12C LCD 1602 display  
 - Speaker  
 - Audio amplifier module  
 - Fan  
@@ -201,9 +204,8 @@ python3 buttonLED.py
 ---
   
 <p align="center">
-  <img src="https://github.com/user-attachments/assets/df8b5af0-1c7e-4860-91a9-af29790351d9" width="600" height="600">
+  <img src="https://github.com/user-attachments/assets/c91c5757-9f6c-4a9a-9716-8a39a1fd7029" alt="IMG_4974" width="600" height="600">
 </p>
-
 
 ---
 
