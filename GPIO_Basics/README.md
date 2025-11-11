@@ -1,4 +1,4 @@
-# GPIO Basics
+# GPIO Basics 🚥
 
 This section covers foundational Raspberry Pi GPIO programming examples. These scripts teach how to control LEDs, read button inputs, and use internal pull-up resistors.
 
@@ -21,3 +21,9 @@ This section covers foundational Raspberry Pi GPIO programming examples. These s
 - Resistors
 - Push buttons
 - Breadboard and jumper wires
+
+---
+
+https://github.com/user-attachments/assets/a840ca55-7319-4776-a2ed-ef5967af9028
+
+---
