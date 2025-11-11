@@ -113,8 +113,8 @@ sudo apt install python3-gpiozero
 
 1. Clone this repository:
 ```bash
-git clone https://github.com/<your-username>/RaspberryPiTutorials.git
-cd RaspberryPiTutorials
+git clone https://github.com/mariarodr1136/RaspberryPiTutorials.git
+cd RaspberryPiLab
 ```
 
 2. Open any tutorial folder, for example:
