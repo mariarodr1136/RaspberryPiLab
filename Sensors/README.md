@@ -11,7 +11,15 @@ This section contains examples of reading sensor data and displaying information
 - **lcdDisplay.py** – Demonstrates how to display text on an I2C LCD1602 screen. Continuously prints messages like "Hello, World!" and "RPi LCD1602".  
 - **LCD1602.py** – Provides low-level functions to control an LCD1602 via I2C, including initialization, writing text, clearing the screen, and enabling the backlight.  
 - **tempLCD.py** – Reads temperature and humidity from a DHT11 sensor and displays the values on the LCD1602. Includes a button to switch between Celsius and Fahrenheit modes.  
-- **tempHumidity.py** – Reads temperature and humidity from a DHT11 sensor and prints the values to the terminal.  
+- **tempHumidity.py** – Reads temperature and humidity from a DHT11 sensor and prints the values to the terminal.
+
+---
+
+<p align="center">
+  <img src="https://github.com/user-attachments/assets/c30a05f2-884c-4a36-9dce-bc1718a4a768" alt="IMG_4979" width="600" height="700">
+</p>
+
+---
 
 ## Concepts Covered
 
@@ -30,4 +38,5 @@ This section contains examples of reading sensor data and displaying information
 - DHT11 temperature and humidity sensor  
 - LCD1602 I2C display  
 - Breadboard and jumper wires  
-- Push button (for switching temperature units in `tempLCD.py`)  
+- Push button (for switching temperature units in `tempLCD.py`)
+
