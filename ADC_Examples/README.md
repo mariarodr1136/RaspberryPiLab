@@ -1,4 +1,4 @@
-# ADC Examples
+# ADC Examples 📟
 
 This section demonstrates how to use the **ADC0834** analog-to-digital converter with the Raspberry Pi. These scripts show how to read analog values from various sensors and control devices like servos and RGB LEDs.
 
@@ -21,3 +21,9 @@ This section demonstrates how to use the **ADC0834** analog-to-digital converter
 - Servo motor
 - RGB LED
 - Breadboard and jumper wires
+
+---
+
+https://github.com/user-attachments/assets/6541946f-7658-4d40-8dd0-5e4be218665a
+
+---
