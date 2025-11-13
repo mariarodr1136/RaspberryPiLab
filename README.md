@@ -64,6 +64,7 @@ RaspberryPiLab/
 │
 ├── ADC_Examples/
 │   ├── anIn.py                   # Basic analog input using ADC0834
+│   ├── photon-detect.py          # Reads LDR light intensity via ADC0834
 │   ├── joyStick.py               # Joystick X/Y reading via ADC0834
 │   ├── potServo.py               # Potentiometer controlling a servo motor
 │   ├── RGBmix.py                 # RGB LED color mixing via analog inputs
