@@ -8,10 +8,11 @@ This hands-on collection of Raspberry Pi hardware projects is designed to teach 
 
 ![Python](https://img.shields.io/badge/Language-Python-3776AB?logo=python&logoColor=white) ![Raspberry Pi](https://img.shields.io/badge/Hardware-Raspberry%20Pi-C51A4A?logo=raspberrypi&logoColor=white) ![GPIO](https://img.shields.io/badge/Module-RPi.GPIO-EE0000) ![Sensors](https://img.shields.io/badge/Category-Sensors-00A86B) ![ADC0834](https://img.shields.io/badge/Chip-ADC0834-FFA500) ![Electronics](https://img.shields.io/badge/Skills-Electronics-yellow) ![Breadboard](https://img.shields.io/badge/Component-Breadboard-lightgrey) ![Python3](https://img.shields.io/badge/Version-Python%203.7+-blue) ![VS Code](https://img.shields.io/badge/Editor-VS%20Code-0078D7?logo=visualstudiocode) ![Git](https://img.shields.io/badge/Version%20Control-Git-F05032?logo=git&logoColor=white) ![GitHub](https://img.shields.io/badge/Repo-GitHub-181717?logo=github) ![Linux](https://img.shields.io/badge/OS-Linux-lightgrey?logo=linux) ![GPIOZero](https://img.shields.io/badge/Library-GPIOZero-009688) ![Matplotlib](https://img.shields.io/badge/Visualization-Matplotlib-11557C) ![SensorsKit](https://img.shields.io/badge/Kit-Sensor%20Modules-orange)
 
+
 ---
 
 <p align="center">
-  <img src="https://github.com/user-attachments/assets/2db21b23-a1fe-4959-a9e9-745a955dbc6d" alt="IMG_4893" width="600" height="600">
+  <img src="https://github.com/user-attachments/assets/f96ba1ca-2a25-4d48-aa68-5eef31c667cf" alt="IMG_4517" width="1000">
 </p>
 
 ---
@@ -31,9 +32,7 @@ All experiments in this repository are built using components from this kit, ens
 
 ---
 
-<p align="center">
-  <img src="https://github.com/user-attachments/assets/5d860645-a026-41f3-bd59-f1d61252a14b" alt="IMG_4152" width="600" height="600">
-</p>
+![IMG_5084](https://github.com/user-attachments/assets/0251e93a-90b5-409a-94c3-4f7581f677ca)
 
 ---
 
@@ -124,9 +123,7 @@ python3 buttonLED.py
 
 ---
 
-<p align="center">
-  <img src="https://github.com/user-attachments/assets/26564b1f-20fd-4b65-bfa2-ecd2772ea7b7" alt="IMG_4517" width="400">
-</p>
+![IMG_5085](https://github.com/user-attachments/assets/dfd09dc2-cda8-4642-8f19-ca4e95483955)
 
 ---
 
