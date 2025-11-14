@@ -48,6 +48,8 @@ RaspberryPiLab/
 │   ├── myRGBbutton.py            # RGB LED controlled by multiple buttons
 │   ├── passive-beep.py           # Demonstrates PWM control of a passive buzzer
 │   ├── active-beep.py            # Demonstrates digital on/off control of an active buzzer
+│   ├── keypad.py                 # Reads one specific row/column pair
+│   ├── keypad2.py                # Scans entire keypad matrix and prints key pressed
 │   └── README.md                 # Documentation for all GPIO_Basics scripts
 │
 ├── Sensors/
@@ -141,7 +143,7 @@ python3 buttonLED.py
 - ✅ Push button
 - Slide switch  
 - Micro switch  
-- Keypad  
+- ✅ Keypad  
 - Rotary encoder  
 - ✅ Joystick module  
 - ✅ Tilt switch sensor  
