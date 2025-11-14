@@ -17,6 +17,11 @@ This section covers foundational Raspberry Pi GPIO programming examples. These s
   The script drives each row HIGH one at a time and reads all column inputs to
   detect which key is pressed. Includes debouncing and prints the key value in
   real time.
+- **kpLib.py** – A reusable Python class that implements a full 4×4 keypad driver. 
+  Handles row scanning, column reading, debouncing, and multi-character input until
+  a return key is pressed.
+- **kp-read.py** – Example program that imports the keypad class, reads a 
+  sequence of key presses, and prints the final string when the return key is pressed.
 
 ---
 
@@ -46,4 +51,3 @@ https://github.com/user-attachments/assets/741e1b84-bc0f-4ef8-a296-2c75eff9db6f
 - Additional jumper wires for row/column connections
 
 ---
-
