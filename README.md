@@ -50,6 +50,8 @@ RaspberryPiLab/
 │   ├── active-beep.py            # Demonstrates digital on/off control of an active buzzer
 │   ├── keypad.py                 # Reads one specific row/column pair
 │   ├── keypad2.py                # Scans entire keypad matrix and prints key pressed
+│   ├── kpLib.py                  # Keypad class library (full row/column scan + multi-key input)
+│   ├── kp-read.py                # Demonstration program using the keypad class
 │   └── README.md                 # Documentation for all GPIO_Basics scripts
 │
 ├── Sensors/
