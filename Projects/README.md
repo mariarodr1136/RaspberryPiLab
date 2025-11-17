@@ -28,6 +28,8 @@ This project demonstrates **multi-sensor logic**, **ADC integration**, and **rea
 * Uses **ADC0834** for analog sensor reading
 * Safe shutdown via keyboard interrupt (`Ctrl+C`)
 
+---
+
 ### 🧠 Concepts Applied
 
 * GPIO input/output handling
@@ -36,8 +38,6 @@ This project demonstrates **multi-sensor logic**, **ADC integration**, and **rea
 * Real-time signal monitoring and event-based control
 
 ---
-
-## 🧩 Hardware Setup
 
 ### 🔌 Components
 
@@ -53,45 +53,62 @@ This project demonstrates **multi-sensor logic**, **ADC integration**, and **rea
 ![Screenshot 2025-11-13 at 2 04 27 PM](https://github.com/user-attachments/assets/d24910f3-d3f1-4f5a-bd85-091dc9dd6369)
 > *Note: The motion detector (not shown) connects directly to 3V3, GPIO23, and GND*
 ---
-
-## 💻 Code Summary
-
-```python
-import RPi.GPIO as GPIO
-import ADC0834
-from time import sleep
-GPIO.setmode(GPIO.BCM)
-motionPin=23
-buzzPin=26
-GPIO.setup(buzzPin,GPIO.OUT)
-GPIO.output(buzzPin,GPIO.HIGH)
-GPIO.setup(motionPin,GPIO.IN)
-ADC0834.setup()
-sleep(2)
-try:
-    while True:
-        motion=GPIO.input(motionPin)
-        lightVal=ADC0834.getResult(0)
-        print("Light Value: ", lightVal, " Motion: ", motion)
-        sleep(.1)
-        if motion==1 and lightVal<140:
-            GPIO.output(buzzPin,GPIO.LOW)
-            print("INTRUDER ALERT: Deploy Countermeasures! ")
-        else:
-            print("Area Secure")
-            GPIO.output(buzzPin,GPIO.HIGH)
-except KeyboardInterrupt:
-        sleep(0.25)
-        GPIO.cleanup()
-        print("Program terminated")
-```
-
 ## 📘 Learning Outcomes
 
 * Combine multiple sensor inputs for event detection
 * Apply ADC for analog light measurement
 * Implement alert systems with Python and GPIO
 * Reinforce understanding of conditional automation in embedded systems
+
+---
+
+## 🔐 Keypad-LCD Password Security System (`kpLib-thread-al.py`)
+
+### 🔍 Overview
+
+The **Keypad-LCD Password Security System** is an interactive authentication project that uses a **4×4 matrix keypad** and an **I2C LCD1602** display. It supports **arming**, **disarming**, and **changing the password** in real time. The project runs a dedicated **background thread** to continuously read keypad input without blocking the main logic loop.
+
+This project demonstrates **multi-component integration**, **threading**, and **user-interface design** for embedded systems.
+
+---
+
+https://github.com/user-attachments/assets/574fcc0b-da41-40cf-b10c-9146ed3d2030
+
+---
+
+### ⚙️ Features
+
+* Continuously reads keypad input using a background **thread**
+* Supports three command modes:
+
+  * **A + password** → *ARM system*
+  * **B + password** → *DISARM system*
+  * **C + password** → *ENTER PASSWORD CHANGE mode*
+* Allows the user to set a **new custom password**
+* Displays messages and status updates on the **LCD1602**
+* Responsive UI — screen updates immediately based on user input
+* Clean loop exit using `Ctrl+C`
+
+---
+
+### 🧠 Concepts Applied
+
+* Multithreading for non-blocking keypad input
+* User authentication and state management
+* LCD1602 text output and UI design
+* Real-time embedded interaction loops
+* Event-triggered logic using keypad characters
+
+---
+
+## 🧩 Hardware Setup
+
+### 🔌 Components
+
+* Raspberry Pi 4 (or compatible model)
+* 4×4 Matrix Keypad
+* LCD1602 (I2C interface, address 0x27)
+* Jumper wires & breadboard
 
 ---
 
