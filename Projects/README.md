@@ -62,17 +62,17 @@ This project demonstrates **multi-sensor logic**, **ADC integration**, and **rea
 
 ---
 
-## 🔐 Keypad-LCD Password Security System (`kpLib-thread-al.py`)
+## 🔐 Keypad-LCD Password Security System with Motion Sensor (`kpLib-thread-al.py`)
 
 ### 🔍 Overview
 
-The **Keypad-LCD Password Security System** is an interactive authentication project that uses a **4×4 matrix keypad** and an **I2C LCD1602** display. It supports **arming**, **disarming**, and **changing the password** in real time. The project runs a dedicated **background thread** to continuously read keypad input without blocking the main logic loop.
+The **Keypad-LCD Password Security System with Motion Sensor** is an interactive authentication and monitoring project. It uses a **4×4 matrix keypad**, an **I2C LCD1602** display, and a **PIR motion sensor** to provide real-time alerts. Users can **arm**, **disarm**, or **change the password**, while the system continuously monitors for movement.
 
-This project demonstrates **multi-component integration**, **threading**, and **user-interface design** for embedded systems.
+This project demonstrates **multi-component integration**, **threading**, **sensor monitoring**, and **user-interface design** for embedded systems.
 
 ---
 
-https://github.com/user-attachments/assets/574fcc0b-da41-40cf-b10c-9146ed3d2030
+https://github.com/user-attachments/assets/8592c76b-0675-4af8-9bb4-92534b10c209
 
 ---
 
@@ -81,13 +81,13 @@ https://github.com/user-attachments/assets/574fcc0b-da41-40cf-b10c-9146ed3d2030
 * Continuously reads keypad input using a background **thread**
 * Supports three command modes:
 
-  * **A + password** → *ARM system*
-  * **B + password** → *DISARM system*
-  * **C + password** → *ENTER PASSWORD CHANGE mode*
-* Allows the user to set a **new custom password**
-* Displays messages and status updates on the **LCD1602**
-* Responsive UI — screen updates immediately based on user input
-* Clean loop exit using `Ctrl+C`
+  * **A + password** → *ARM system* (displays **INTRUDER ALERT** if motion detected)
+  * **B + password** → *DISARM system* (disables all sensors)
+  * **C + password** → *ENTER PASSWORD CHANGE mode* (set a new custom password)
+* Real-time motion detection using a **PIR sensor**
+* Displays status and alerts on the **LCD1602**
+* Responsive UI — screen updates immediately based on user input and sensor readings
+* Clean program exit with `Ctrl+C` or `*` key
 
 ---
 
@@ -97,7 +97,8 @@ https://github.com/user-attachments/assets/574fcc0b-da41-40cf-b10c-9146ed3d2030
 * User authentication and state management
 * LCD1602 text output and UI design
 * Real-time embedded interaction loops
-* Event-triggered logic using keypad characters
+* Event-driven logic combining keypad input and motion sensor
+* Basic GPIO input handling for PIR motion detection
 
 ---
 
@@ -108,6 +109,7 @@ https://github.com/user-attachments/assets/574fcc0b-da41-40cf-b10c-9146ed3d2030
 * Raspberry Pi 4 (or compatible model)
 * 4×4 Matrix Keypad
 * LCD1602 (I2C interface, address 0x27)
+* PIR Motion Sensor (HC-SR501)
 * Jumper wires & breadboard
 
 ---
