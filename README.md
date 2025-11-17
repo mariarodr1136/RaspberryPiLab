@@ -65,6 +65,7 @@ RaspberryPiLab/
 │   ├── tempLCD.py                # Reads DHT11 sensor and displays temperature/humidity on LCD
 │   ├── tempHumidity.py           # Reads DHT11 sensor and prints temperature/humidity to terminal
 │   ├── tempBuzzerAlarm.py        # Monitors temperature and humidity, displays on LCD, and triggers buzzer alerts
+│   ├── lcd-kp.py                 # simple keypad+LCD helper script
 │   └── README.md                 # Documentation for all Sensor scripts
 │
 ├── ADC_Examples/
@@ -77,6 +78,7 @@ RaspberryPiLab/
 │
 └── Projects/
     ├── motion-dark-alarm.py      # Motion and light detection alarm with buzzer alert
+    └── kpLib-thread-al.py        # keypad+LCD password alarm system
     └── README.md                 # Documentation for all Projects scripts
 ```
 
