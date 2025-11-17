@@ -48,17 +48,12 @@ This project demonstrates **multi-sensor logic**, **ADC integration**, and **rea
 * Active buzzer or LED
 * Breadboard and jumper wires
 
+---
+
 ### 🧰 Circuit Schematic
 
 ![Screenshot 2025-11-13 at 2 04 27 PM](https://github.com/user-attachments/assets/d24910f3-d3f1-4f5a-bd85-091dc9dd6369)
 > *Note: The motion detector (not shown) connects directly to 3V3, GPIO23, and GND*
----
-## 📘 Learning Outcomes
-
-* Combine multiple sensor inputs for event detection
-* Apply ADC for analog light measurement
-* Implement alert systems with Python and GPIO
-* Reinforce understanding of conditional automation in embedded systems
 
 ---
 
@@ -101,8 +96,6 @@ https://github.com/user-attachments/assets/8592c76b-0675-4af8-9bb4-92534b10c209
 * Basic GPIO input handling for PIR motion detection
 
 ---
-
-## 🧩 Hardware Setup
 
 ### 🔌 Components
 
