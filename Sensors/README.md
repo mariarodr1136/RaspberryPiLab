@@ -21,6 +21,8 @@ This section contains examples of reading sensor data and displaying information
 - **tempLCD.py** – Reads temperature and humidity from a DHT11 sensor and displays the values on the LCD1602. Includes a button to switch between Celsius and Fahrenheit modes.  
 - **tempHumidity.py** – Reads temperature and humidity from a DHT11 sensor and prints the values to the terminal.  
 - **tempBuzzerAlarm.py** – Monitors temperature using a DHT11 sensor and an ADC0834 analog input. Displays temperature and humidity on the LCD1602 and activates a buzzer when the temperature exceeds a user-set threshold. Includes a button to switch between “Set Trip Temp” mode and “Monitor Temp” mode.
+- **lcd-kp.py** – Reads user input from a keypad and displays the typed value on the LCD1602 screen. Demonstrates keypad-to-LCD interaction with automatic screen updates.
+
 
 
 ## Concepts Covered
