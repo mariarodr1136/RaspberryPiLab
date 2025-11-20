@@ -13,6 +13,7 @@ This hands-on collection of Raspberry Pi hardware projects is designed to teach 
 
 <p align="center">
   <img src="https://github.com/user-attachments/assets/f96ba1ca-2a25-4d48-aa68-5eef31c667cf" alt="IMG_4517" width="1000">
+  
 </p>
 
 ---
@@ -33,6 +34,8 @@ All experiments in this repository are built using components from this kit, ens
 ---
 
 ![IMG_5222](https://github.com/user-attachments/assets/893a5644-f4ec-4bd1-b9a3-097dc91e47c6)
+
+![IMG_5488](https://github.com/user-attachments/assets/3398bc99-df33-4d35-918a-1945cc393f2d)
 
 
 ---
