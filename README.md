@@ -87,6 +87,10 @@ RaspberryPiLab/
 
 ---
 
+https://github.com/user-attachments/assets/31617bdb-1cec-40c9-b78d-cb7d6c41c14c
+
+---
+
 ## ⚙️ Requirements
 
 Make sure you have the following installed on your Raspberry Pi:
@@ -203,6 +207,15 @@ python3 buttonLED.py
 - ✅ Passive & active buzzers (2+2x)  
 - ✅ Various sensors (temperature, light, etc.)  
 - Caps (10x 6×6 mm tactile caps)  
+
+
+---
+
+
+
+https://github.com/user-attachments/assets/3683bad2-19ed-4b39-a5e0-7ab2cf17cd72
+
+
 
 
 ---
