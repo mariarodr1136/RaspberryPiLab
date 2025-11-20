@@ -215,13 +215,4 @@ python3 buttonLED.py
 ---
 
 
-## 💡 Future Directions
-
-- Add I2C and SPI communication tutorials
-- Include camera and image processing projects
-- Explore IoT integration with AWS and MQTT
-
-
----
-
 ⭐ If you find this repository useful, consider starring it!
