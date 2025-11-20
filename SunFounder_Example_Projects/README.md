@@ -206,7 +206,6 @@ Pressing the buttons plays the corresponding musical notes (DO, RE, MI, FA, SO, 
 
 ---
 
-
 https://github.com/user-attachments/assets/d4141ea3-25ac-45e8-ab75-1dd12e1fc71d
 > Press the seven buttons to play notes with the buzzer.
 
@@ -296,3 +295,284 @@ if __name__ == '__main__':
 
 ---
 
+# Driving LEDs with 74HC595 – Raspberry Pi Electronic Kit (Lesson 18)
+
+This project demonstrates how to use a **74HC595 shift register** to control **8 LEDs** with a Raspberry Pi.  
+Using the shift register allows you to save GPIO pins while controlling multiple LEDs.
+
+---
+
+
+https://github.com/user-attachments/assets/c7322170-643a-4d43-9b5c-b9d80f8c916f
+
+
+
+> LEDs light from left → right, then flash together 3 times  
+> LEDs light from right → left, then flash together 3 times  
+> Loop continues
+
+---
+
+## 📘 Overview
+
+The **74HC595** is an 8-bit shift register with serial input and parallel output:
+
+* **DS (SDI)** → Serial data input  
+* **SHCP (SRCLK)** → Shift register clock input  
+* **STCP (RCLK)** → Storage register clock input  
+* **Q0–Q7** → Parallel outputs to LEDs  
+* **MR** → Reset (active low)  
+* **OE** → Output enable (active low)  
+
+Data is sent serially from the Raspberry Pi to the 74HC595, then displayed on the LEDs.  
+This lesson shows how to shift bits and control the LEDs in patterns.
+
+---
+
+## 🛠 Hardware Required
+
+* Raspberry Pi
+* 74HC595 shift register
+* 8× LEDs
+* 8× 220Ω resistors
+* Jumper wires
+* Breadboard
+
+---
+
+## 🔌 Circuit Wiring
+
+**74HC595 Pins:**
+
+* DS (serial input) → GPIO 0
+* SHCP (shift clock) → GPIO 2
+* STCP (storage clock) → GPIO 1
+* MR → 3.3V (HIGH)
+* OE → GND (LOW)
+* Q0–Q7 → LED anodes through 220Ω resistors  
+* LED cathodes → GND
+
+Behavior:
+
+* LEDs light **left to right**, then flash all together 3 times  
+* LEDs light **right to left**, then flash all together 3 times  
+* Pattern repeats in a loop
+
+---
+
+## 💻 Code (Python Example)
+
+```python
+import RPi.GPIO as GPIO
+import time
+
+SDI = 0    # Serial Data Input
+RCLK = 1   # Storage Clock (STCP)
+SRCLK = 2  # Shift Clock (SHCP)
+
+LEDs = [0x01, 0x02, 0x04, 0x08, 0x10, 0x20, 0x40, 0x80]
+BLINK = [0xFF, 0x00]
+sleeptime = 0.15
+blink_sleeptime = 0.1
+
+def setup():
+    GPIO.setmode(GPIO.BCM)
+    GPIO.setup(SDI, GPIO.OUT, initial=GPIO.LOW)
+    GPIO.setup(RCLK, GPIO.OUT, initial=GPIO.LOW)
+    GPIO.setup(SRCLK, GPIO.OUT, initial=GPIO.LOW)
+
+def pulse(pin):
+    GPIO.output(pin, GPIO.LOW)
+    GPIO.output(pin, GPIO.HIGH)
+
+def hc595_shift(dat):
+    for bit in range(0, 8):
+        GPIO.output(SDI, 0x80 & (dat << bit))
+        GPIO.output(SRCLK, GPIO.HIGH)
+        time.sleep(0.001)
+        GPIO.output(SRCLK, GPIO.LOW)
+    GPIO.output(RCLK, GPIO.HIGH)
+    time.sleep(0.001)
+    GPIO.output(RCLK, GPIO.LOW)
+
+def loop():
+    while True:
+        for onoff in LEDs:
+            hc595_shift(onoff)
+            time.sleep(sleeptime)
+        for onoff in BLINK:
+            hc595_shift(onoff)
+            time.sleep(blink_sleeptime)
+        for onoff in reversed(LEDs):
+            hc595_shift(onoff)
+            time.sleep(sleeptime)
+        for onoff in BLINK:
+            hc595_shift(onoff)
+            time.sleep(blink_sleeptime)
+
+def destroy():
+    GPIO.cleanup()
+
+if __name__ == '__main__':
+    setup()
+```
+
+---
+
+# Traffic Light – Raspberry Pi Electronic Kit (Lesson 20)
+
+This project demonstrates how to use a **74HC595 shift register** to drive a **7-segment display** and control three LEDs on a Raspberry Pi, simulating a traffic light. 
+The display shows a countdown timer, and the LEDs change in the order: **Red → Green → Yellow**.
+
+---
+
+
+https://github.com/user-attachments/assets/4de0dd9e-80a1-4074-97da-b790091dfb6f
+
+
+> Red LED → 9 seconds
+
+> Green LED → 5 seconds
+
+> Yellow LED → 3 seconds
+---
+
+## 📘 Overview
+
+This lesson uses a 74HC595 shift register to extend GPIO outputs and control a 7-segment display. The display shows the remaining seconds for each traffic light color. The LEDs light up according to the traffic light state.
+
+- **Red LED** → 9 seconds
+- **Green LED** → 5 seconds
+- **Yellow LED** → 3 seconds
+
+---
+
+## 🛠 Hardware Required
+
+* Raspberry Pi
+* 3× LEDs (Red, Green, Yellow)
+* 3× 220Ω resistors
+* 1× 7-segment display
+* 1× 74HC595 shift register
+* Jumper wires
+* Breadboard
+
+---
+
+## 🔌 Circuit Wiring
+
+**74HC595 Shift Register:**
+
+* SDI → GPIO 0
+* RCLK → GPIO 1
+* SRCLK → GPIO 2
+
+**Traffic Light LEDs:**
+
+* Red → GPIO 3
+* Green → GPIO 4
+* Yellow → GPIO 5
+
+**7-Segment Display:**
+
+* Connect each segment pin (a–g, DP) to the 74HC595 outputs with current-limiting resistors.
+
+Behavior:
+
+* Display shows countdown for current LED.
+* LEDs light according to traffic light state:
+  * **Red** → 9s
+  * **Green** → 5s
+  * **Yellow** → 3s
+
+---
+
+## 💻 Code (C Example)
+
+```
+#include <wiringPi.h>
+#include <stdio.h>
+#include <wiringShift.h>
+#include <signal.h>
+#include <unistd.h>
+
+#define SDI 0
+#define RCLK 1
+#define SRCLK 2
+
+const int ledPin[]={3,4,5};
+unsigned char SegCode[17] = {0x3f,0x06,0x5b,0x4f,0x66,0x6d,0x7d,0x07,0x7f,0x6f,0x77,0x7c,0x39,0x5e,0x79,0x71,0x80};
+
+int greentime = 5;
+int yellowtime = 3;
+int redtime = 9;
+int colorState = 0;
+char *lightColor[]={"Red","Green","Yellow"};
+int counter = 9;
+
+void init(void){
+    pinMode(SDI, OUTPUT);
+    pinMode(RCLK, OUTPUT);
+    pinMode(SRCLK, OUTPUT);
+    digitalWrite(SDI, 0);
+    digitalWrite(RCLK, 0);
+    digitalWrite(SRCLK, 0);
+    for(int i=0;i<3;i++){
+        pinMode(ledPin[i],OUTPUT);
+        digitalWrite(ledPin[i],LOW);
+    }
+}
+
+void hc595_shift(unsigned char dat){
+    for(int i=0;i<8;i++){
+        digitalWrite(SDI, 0x80 & (dat << i));
+        digitalWrite(SRCLK, 1);
+        delay(1);
+        digitalWrite(SRCLK, 0);
+    }
+    digitalWrite(RCLK, 1);
+    delay(1);
+    digitalWrite(RCLK, 0);
+}
+
+void timer(int sig){
+    if(sig == SIGALRM){
+        counter--;
+        alarm(1);
+        if(counter == 0){
+            if(colorState == 0) counter = greentime;
+            if(colorState == 1) counter = yellowtime;
+            if(colorState == 2) counter = redtime;
+            colorState = (colorState+1)%3;
+        }
+        printf("counter : %d \t light color: %s \n",counter,lightColor[colorState]);
+    }
+}
+
+void display(int num) {
+    hc595_shift(SegCode[num%10]);
+    delay(1);
+}
+
+void lightup(int state) {
+    for(int i=0;i<3;i++){
+        digitalWrite(ledPin[i],LOW);
+    }
+    digitalWrite(ledPin[state],HIGH);
+}
+
+int main(void) {
+    if(wiringPiSetup() == -1){
+        printf("setup wiringPi failed !");
+        return 1;
+    }
+    init();
+    signal(SIGALRM,timer);
+    alarm(1);
+    while(1){
+        display(counter);
+        lightup(colorState);
+    }
+    return 0;
+}
+```
