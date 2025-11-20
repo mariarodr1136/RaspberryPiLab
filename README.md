@@ -80,6 +80,7 @@ RaspberryPiLab/
 │   ├── motion-dark-alarm.py      # Motion and light detection alarm with buzzer alert
 │   └── kpLib-thread-al.py        # Keypad + LCD password alarm system with PIR motion detection
 │   └── README.md                 # Documentation for all Projects scripts
+│
 └──SunFounder_Example_Projects/
     └── README.md                 # Projects referenced from SunFounder 
 ```
