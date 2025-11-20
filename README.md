@@ -76,10 +76,12 @@ RaspberryPiLab/
 │   ├── RGBmix.py                 # RGB LED color mixing via analog inputs
 │   └── README.md                 # Documentation for all ADC_Examples scripts
 │
-└── Projects/
-    ├── motion-dark-alarm.py      # Motion and light detection alarm with buzzer alert
-    └── kpLib-thread-al.py        # Keypad + LCD password alarm system with PIR motion detection
-    └── README.md                 # Documentation for all Projects scripts
+├── Projects/
+│   ├── motion-dark-alarm.py      # Motion and light detection alarm with buzzer alert
+│   └── kpLib-thread-al.py        # Keypad + LCD password alarm system with PIR motion detection
+│   └── README.md                 # Documentation for all Projects scripts
+└──SunFounder_Example_Projects/
+    └── README.md                 # Projects referenced from SunFounder 
 ```
 
 ---
@@ -147,8 +149,8 @@ python3 buttonLED.py
 
 ### Input & Control Devices
 - ✅ Push button
-- Slide switch  
-- Micro switch  
+- ✅ Slide switch  
+- ✅ Micro switch  
 - ✅ Keypad  
 - Rotary encoder  
 - ✅ Joystick module  
