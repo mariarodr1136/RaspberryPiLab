@@ -173,7 +173,7 @@ python3 buttonLED.py
 - ✅ LEDs (Red, Green, Blue)
 - ✅ RGB LED  
 - LED bar graph  
-- 7-segment display (single)  
+- ✅ 7-segment display (single)  
 - 4-digit 7-segment display  
 - Dot matrix display  
 - ✅ 12C LCD 1602 display  
@@ -200,7 +200,7 @@ python3 buttonLED.py
 
 ### Integrated Circuits & Components
 - ✅ ADC0834 chip
-- 2x 74HC595 shift registers  
+- ✅ 2x 74HC595 shift registers  
 - ✅ Transistors (5x 8550 PNP / 5x S8050 NPN)  
 - Diodes (IN4007, Zener)  
 - Capacitors: 5x 10 μF, (10+10)x 104/103 pF  
@@ -211,15 +211,9 @@ python3 buttonLED.py
 - ✅ Various sensors (temperature, light, etc.)  
 - Caps (10x 6×6 mm tactile caps)  
 
-
 ---
 
-
-
 https://github.com/user-attachments/assets/3683bad2-19ed-4b39-a5e0-7ab2cf17cd72
-
-
-
 
 ---
 
@@ -229,7 +223,6 @@ https://github.com/user-attachments/assets/3683bad2-19ed-4b39-a5e0-7ab2cf17cd72
 - Learn how to interface sensors and actuators
 - Practice Python for embedded systems
 - Build confidence in troubleshooting hardware and software integration
-
 
 ---
 
