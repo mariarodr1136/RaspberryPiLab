@@ -85,7 +85,12 @@ RaspberryPiLab/
 │   └── README.md                 # Documentation for all Projects scripts
 │
 └──SunFounder_Example_Projects/
-    └── README.md                 # Projects referenced from SunFounder 
+    ├── lesson7.py                # Switch – Slide switch controlling 2 LEDs
+    ├── lesson8.py                # Relay – Relay toggling LED via GPIO
+    ├── lesson13.py               # Piano – Button-triggered buzzer notes
+    ├── lesson18.py               # Shift – 74HC595 shift-reg LED patterns
+    ├── lesson20.py               # Traffic Light – Traffic light + 7-seg countdown
+    └── README.md                 # Documentation for all SunFounder projects scripts
 ```
 
 ---
