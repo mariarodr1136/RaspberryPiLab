@@ -189,7 +189,7 @@ python3 buttonLED.py
 
 ### Communication & Identification
 - MFRC522 RFID reader module  
-- Camera module  
+- ✅ Camera module  
 
 ### Sensors
 - ✅ Ultrasonic sensor (HC-SR04)  
