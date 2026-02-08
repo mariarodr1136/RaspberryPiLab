@@ -5,6 +5,55 @@ This section features complete Raspberry Pi projects that integrate multiple sen
 
 ---
 
+## 🪴 LeafMedic: Embedded Computer Vision & Machine Learning System ([Full Project →](https://github.com/mariarodr1136/LeafMedic))
+
+### 🔍 Overview
+
+**LeafMedic** is an **edge AI application** for real-time plant disease detection, fully deployed on a **Raspberry Pi**. The system captures leaf images, preprocesses them dynamically, and runs an optimized **MobileNet model** with **TensorFlow Lite** for on-device inference. A **PyQt5 GUI** displays confidence-ranked predictions along with treatment recommendations, turning raw sensor input into actionable insights.
+
+This project demonstrates **machine learning deployment**, **hardware-software integration**, and **production-oriented edge AI design** on embedded systems.
+
+---
+
+![Raspberry Pi](https://img.shields.io/badge/Raspberry%20Pi-4B-red) ![Python](https://img.shields.io/badge/Python-3.7%2B-blue) ![TensorFlow Lite](https://img.shields.io/badge/TensorFlow-Lite-orange) ![Computer Vision](https://img.shields.io/badge/Computer%20Vision-OpenCV-green) ![Machine Learning](https://img.shields.io/badge/Machine%20Learning-Edge%20AI-purple) ![GUI](https://img.shields.io/badge/GUI-PyQt5-brightgreen)
+
+---
+
+### ⚙️ Features
+
+* Real-time **plant disease detection** on Raspberry Pi using an optimized **MobileNet model**, achieving **90%+ classification accuracy** across 16 crops.  
+* Integrated **camera acquisition**, **dynamic preprocessing**, and a **PyQt5 GUI** displaying predictions with treatment guidance.  
+* Modular, **production-ready edge AI system** with fast (~145ms) inference and scalable architecture.  
+* Supports batch processing of images for offline analysis.  
+* Educational and extensible: learn embedded ML, computer vision, and GUI design.
+
+---
+
+### 🧠 Concepts Applied
+
+* Embedded **machine learning deployment** with TensorFlow Lite  
+* **Camera interfacing** and real-time image acquisition  
+* Modular **software architecture** for scalable edge AI systems  
+* **GUI development** using PyQt5 for real-time user feedback  
+* On-device **preprocessing and inference optimization**  
+
+---
+
+### 🔌 Components
+
+* **Raspberry Pi 4 Model B** (4GB recommended)  
+* Camera Module (Arducam 5MP OV5647 or compatible)  
+* Monitor or display for GUI (1200×800 recommended)  
+* MicroSD card and 5V 3A power supply  
+* Python libraries: `tensorflow`, `PyQt5`, `opencv-python`, `picamera2`, `numpy`
+
+---
+
+⭐ *Check out the full LeafMedic project here: [GitHub Repository →](https://github.com/mariarodr1136/LeafMedic)*
+
+---
+
+
 ## 🕵️‍♀️ Motion-Dark Alarm System (`motion-dark-alarm.py`)
 
 ### 🔍 Overview
