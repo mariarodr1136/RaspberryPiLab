@@ -15,7 +15,10 @@ This project demonstrates **machine learning deployment**, **hardware-software i
 
 ---
 
-![Raspberry Pi](https://img.shields.io/badge/Raspberry%20Pi-4B-red) ![Python](https://img.shields.io/badge/Python-3.7%2B-blue) ![TensorFlow Lite](https://img.shields.io/badge/TensorFlow-Lite-orange) ![Computer Vision](https://img.shields.io/badge/Computer%20Vision-OpenCV-green) ![Machine Learning](https://img.shields.io/badge/Machine%20Learning-Edge%20AI-purple) ![GUI](https://img.shields.io/badge/GUI-PyQt5-brightgreen)
+![plant_interface](https://github.com/user-attachments/assets/c501b2ca-56cf-416e-9695-41256759b555)
+
+![raspberry_camera](https://github.com/user-attachments/assets/15d97414-3576-4c9f-a7a4-f7bfc30e8eaa)
+
 
 ---
 
